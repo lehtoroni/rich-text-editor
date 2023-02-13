@@ -16,7 +16,7 @@ export const defaults = {
 }
 
 const emptyEquationSelector = 'img[src="/math.svg?latex="]'
-export const equationImageSelector = `img[src^="/math.svg?latex="]:not(${emptyEquationSelector}), img[src^="data:image/svg+xml"]`
+export const equationImageSelector = `img[src^="/math.svg?latex="]:not(${emptyEquationSelector}), img[src^="data:image/svg+xml"], img[src^="lmath://"]`
 function convertLinksToRelative(html) {
     return html.replace(new RegExp(document.location.origin, 'g'), '')
 }
