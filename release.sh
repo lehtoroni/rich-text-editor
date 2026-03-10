@@ -14,4 +14,4 @@ VERSION=$1
 npm version ${VERSION} -m "Release %s"
 npm run build
 
-npx publish-to-git --tag v$VERSION
+npx publish-to-git --tag v$VERSION --force
