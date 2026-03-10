@@ -11,7 +11,7 @@ fi
 
 VERSION=$1
 
-npm version ${VERSION} -m "Release %s"
+npm version "$VERSION" --no-git-tag-version
 npm run build
 
-npx publish-to-git --tag v$VERSION --force
+npx publish-to-git --tag v$VERSION
