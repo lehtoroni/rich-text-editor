@@ -1,6 +1,6 @@
 {
   "name": "rich-text-editor",
-  "version": "70.0.1",
+  "version": "70.0.2",
   "description": "Rich text editor",
   "author": "",
   "homepage": "https://github.com/lehtoroni/rich-text-editor",
@@ -21,8 +21,7 @@
     "test": "eslint . && test/testRunner.js",
     "dev": "supervisor -i public,test test/index.js",
     "generateMathButtons": "scripts/createMathSvg.js && prettier --write src/latexCommandsWithSvg.js",
-    "lint": "eslint .",
-    "prepare": "npm run build && npm run build:bundle"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
