@@ -12,13 +12,6 @@ fi
 VERSION=$1
 
 npm version ${VERSION} -m "Release %s"
+npm run build
 
-cat <<EOF
-Updated package.json and created the version tag.
-
-Check your version history, if all is fine, push with :
-
-    git push --follow-tags
-    npm publish
-
-EOF
+npx publish-to-git --tag v$VERSION

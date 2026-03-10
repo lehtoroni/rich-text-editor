@@ -48,6 +48,7 @@
     "mocha": "^10.0.0",
     "morgan": "^1.9.1",
     "prettier": "^3.0.0",
+    "publish-to-git": "^1.2.0",
     "sanitize-html": "^2.0.0",
     "supervisor": "^0.12.0",
     "ts-loader": "^9.2.8",
@@ -60,10 +61,10 @@
     "webpack-dev-middleware": "^6.0.0"
   },
   "dependencies": {
-    "@digabi/mathquill": "^0.10.12",
     "@types/express": "*",
-    "jquery": "^3.3.1",
-    "mathjax-node": "^2.1.1"
+    "jquery": "3.x",
+    "mathjax-node": "^2.1.1",
+    "mathquill": "github:lehtoroni/mathquill#v0.10.15"
   },
   "peerDependencies": {
     "jquery": "3.x",
