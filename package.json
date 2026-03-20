@@ -1,6 +1,6 @@
 {
   "name": "rich-text-editor",
-  "version": "70.0.3",
+  "version": "70.0.4",
   "description": "Rich text editor",
   "author": "",
   "homepage": "https://github.com/lehtoroni/rich-text-editor",
@@ -63,7 +63,7 @@
     "@types/express": "*",
     "jquery": "3.x",
     "mathjax-node": "^2.1.1",
-    "mathquill": "github:lehtoroni/mathquill#v0.10.16"
+    "mathquill": "github:lehtoroni/mathquill#v0.10.17"
   },
   "peerDependencies": {
     "jquery": "3.x",
