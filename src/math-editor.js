@@ -203,7 +203,14 @@ export function init(
         redoStack = []
         undoStack = []
         toggleMathToolbar(true)
-        setTimeout(() => mqInstance.focus(), 0)
+        setTimeout(() => {
+            // use body flag for focusing TeX field instead
+            if (document.body.matches('[data-focus-tex-first="true"]')) {
+                $latexField.focus();
+            } else {
+                mqInstance.focus();
+            }
+        }, 0)
         $latexField.val($img.prop('alt'))
         setTimeout(() => {
             if (isLatexInvalid()) $latexField.focus()
